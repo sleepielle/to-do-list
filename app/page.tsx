@@ -1,9 +1,9 @@
-import LoginPage from "./login/login";
+import SignInPage from "./sign-in/page";
 
 export default function Home() {
   return (
-    <div>
-      <LoginPage />
+    <div className="h-screen">
+      <SignInPage />
     </div>
   );
 }

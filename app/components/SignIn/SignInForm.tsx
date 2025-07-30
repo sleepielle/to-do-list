@@ -2,8 +2,9 @@ import { cn } from "@/lib/utils";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Link from "next/link";
 
-export function LoginForm({
+export function SignInForm({
   className,
   ...props
 }: React.ComponentProps<"form">) {
@@ -40,9 +41,9 @@ export function LoginForm({
           <span className="bg-background text-muted-foreground relative z-10 px-2">
             Don&apos;t have an account?{" "}
           </span>
-          <a href="#" className="underline underline-offset-4">
+          <Link href={"/sign-up"} className="underline underline-offset-4">
             Sign up
-          </a>
+          </Link>
         </div>
       </div>
     </form>
